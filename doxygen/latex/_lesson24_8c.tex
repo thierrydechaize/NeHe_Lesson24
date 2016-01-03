@@ -1,0 +1,301 @@
+\hypertarget{_lesson24_8c}{}\section{Référence du fichier C\+:/src/\+Open\+G\+L/\+Lesson24/\+Lesson24.c}
+\label{_lesson24_8c}\index{C\+:/src/\+Open\+G\+L/\+Lesson24/\+Lesson24.\+c@{C\+:/src/\+Open\+G\+L/\+Lesson24/\+Lesson24.\+c}}
+{\ttfamily \#include $<$windows.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdarg.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}gl.\+h$>$}\\*
+{\ttfamily \#include $<$gl\textbackslash{}glu.\+h$>$}\\*
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_texture_image}{Texture\+Image}
+\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K \hyperlink{_lesson24_8c_a9135ea2a0d6fce68ba3b858226a31a4f}{Wnd\+Proc} (H\+W\+N\+D, U\+I\+N\+T, W\+P\+A\+R\+A\+M, L\+P\+A\+R\+A\+M)
+\item 
+B\+O\+O\+L \hyperlink{_lesson24_8c_afffcfc9f44d139a5243c6d56fabd42c3}{Load\+T\+G\+A} (\hyperlink{struct_texture_image}{Texture\+Image} $\ast$texture, char $\ast$filename)
+\item 
+G\+Lvoid \hyperlink{_lesson24_8c_aa90fba1d494d9474c883fbb29fe0ed53}{Build\+Font} (G\+Lvoid)
+\item 
+G\+Lvoid \hyperlink{_lesson24_8c_a29fd6b15a498074df9565150f5212475}{Kill\+Font} (G\+Lvoid)
+\item 
+G\+Lvoid \hyperlink{_lesson24_8c_ab467816ccc40315cc9b078d4ea7bf4b9}{gl\+Print} (G\+Lint x, G\+Lint y, int set, const char $\ast$fmt,...)
+\item 
+G\+Lvoid \hyperlink{_lesson24_8c_a87bb84d489df61ed7b0c002584fd984f}{Re\+Size\+G\+L\+Scene} (G\+Lsizei width, G\+Lsizei height)
+\item 
+int \hyperlink{_lesson24_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}{Init\+G\+L} (G\+Lvoid)
+\item 
+int \hyperlink{_lesson24_8c_a52061247bdaeb770e3a1d59eefaad972}{Draw\+G\+L\+Scene} (G\+Lvoid)
+\item 
+G\+Lvoid \hyperlink{_lesson24_8c_af33a2273205c1491be5916d3091658e0}{Kill\+G\+L\+Window} (G\+Lvoid)
+\item 
+B\+O\+O\+L \hyperlink{_lesson24_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}{Create\+G\+L\+Window} (char $\ast$title, int width, int height, int bits, B\+O\+O\+L fullscreenflag)
+\item 
+int W\+I\+N\+A\+P\+I \hyperlink{_lesson24_8c_a661c2abc03926acfaeb93b4ae7db4943}{Win\+Main} (H\+I\+N\+S\+T\+A\+N\+C\+E \hyperlink{_lesson24_8c_a74029128723095e7bf00a71d46af8b24}{h\+Instance}, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, int n\+Cmd\+Show)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+H\+D\+C \hyperlink{_lesson24_8c_a78f6446a0e13adc7b7b2f239112ac785}{h\+D\+C} =N\+U\+L\+L
+\item 
+H\+G\+L\+R\+C \hyperlink{_lesson24_8c_a874963259c7cd998acfe6e187fbdb4c1}{h\+R\+C} =N\+U\+L\+L
+\item 
+H\+W\+N\+D \hyperlink{_lesson24_8c_afec4341c234519e145bac6f0e5edaa51}{h\+Wnd} =N\+U\+L\+L
+\item 
+H\+I\+N\+S\+T\+A\+N\+C\+E \hyperlink{_lesson24_8c_a74029128723095e7bf00a71d46af8b24}{h\+Instance}
+\item 
+B\+O\+O\+L \hyperlink{_lesson24_8c_a55a8351b704275ad12988864918abb2a}{keys} \mbox{[}256\mbox{]}
+\item 
+B\+O\+O\+L \hyperlink{_lesson24_8c_a22389371583c4b8843e06da43399d6d9}{active} =T\+R\+U\+E
+\item 
+B\+O\+O\+L \hyperlink{_lesson24_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}{fullscreen} =T\+R\+U\+E
+\item 
+int \hyperlink{_lesson24_8c_a06b53676896b840c29ff225c6d03582b}{scroll}
+\item 
+int \hyperlink{_lesson24_8c_acf2a74a45a0b7b218a1722c7f1f866db}{maxtokens}
+\item 
+int \hyperlink{_lesson24_8c_a2b91abb418355592b0b747cb4e06e2e7}{swidth}
+\item 
+int \hyperlink{_lesson24_8c_a6c2b0225b160c5caba38344c4ddc632e}{sheight}
+\item 
+G\+Luint \hyperlink{_lesson24_8c_ae4cbdc51d2d504c24c15b22cf9861e8d}{base}
+\item 
+\hyperlink{struct_texture_image}{Texture\+Image} \hyperlink{_lesson24_8c_ab0e55850a975a1f6526bf2713d7b3759}{textures} \mbox{[}1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{_lesson24_8c_aa90fba1d494d9474c883fbb29fe0ed53}{}\index{Lesson24.\+c@{Lesson24.\+c}!Build\+Font@{Build\+Font}}
+\index{Build\+Font@{Build\+Font}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Build\+Font(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid Build\+Font (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_aa90fba1d494d9474c883fbb29fe0ed53}
+
+
+Définition à la ligne 207 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}{}\index{Lesson24.\+c@{Lesson24.\+c}!Create\+G\+L\+Window@{Create\+G\+L\+Window}}
+\index{Create\+G\+L\+Window@{Create\+G\+L\+Window}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Create\+G\+L\+Window(char $\ast$title, int width, int height, int bits, B\+O\+O\+L fullscreenflag)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L Create\+G\+L\+Window (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{title, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{int}]{bits, }
+\item[{B\+O\+O\+L}]{fullscreenflag}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_ae5f043c9df9b9e5e0e26d567feeeb1bc}
+This Code Creates Our Open\+G\+L Window. Parameters Are\+: $\ast$ title -\/ Title To Appear At The Top Of The Window $\ast$ width -\/ Width Of The G\+L Window Or Fullscreen Mode $\ast$ height -\/ Height Of The G\+L Window Or Fullscreen Mode $\ast$ bits -\/ Number Of Bits To Use For Color (8/16/24/32) $\ast$ fullscreenflag -\/ Use Fullscreen Mode (T\+R\+U\+E) Or Windowed Mode (F\+A\+L\+S\+E) 
+
+Définition à la ligne 417 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a52061247bdaeb770e3a1d59eefaad972}{}\index{Lesson24.\+c@{Lesson24.\+c}!Draw\+G\+L\+Scene@{Draw\+G\+L\+Scene}}
+\index{Draw\+G\+L\+Scene@{Draw\+G\+L\+Scene}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Draw\+G\+L\+Scene(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}int Draw\+G\+L\+Scene (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_a52061247bdaeb770e3a1d59eefaad972}
+
+
+Définition à la ligne 300 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_ab467816ccc40315cc9b078d4ea7bf4b9}{}\index{Lesson24.\+c@{Lesson24.\+c}!gl\+Print@{gl\+Print}}
+\index{gl\+Print@{gl\+Print}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{gl\+Print(\+G\+Lint x, G\+Lint y, int set, const char $\ast$fmt,...)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid gl\+Print (
+\begin{DoxyParamCaption}
+\item[{G\+Lint}]{x, }
+\item[{G\+Lint}]{y, }
+\item[{int}]{set, }
+\item[{const char $\ast$}]{fmt, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_ab467816ccc40315cc9b078d4ea7bf4b9}
+
+
+Définition à la ligne 239 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}{}\index{Lesson24.\+c@{Lesson24.\+c}!Init\+G\+L@{Init\+G\+L}}
+\index{Init\+G\+L@{Init\+G\+L}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Init\+G\+L(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}int Init\+G\+L (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_aa4c387d3f1ebce6d57684b6a10c9b0ae}
+
+
+Définition à la ligne 283 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a29fd6b15a498074df9565150f5212475}{}\index{Lesson24.\+c@{Lesson24.\+c}!Kill\+Font@{Kill\+Font}}
+\index{Kill\+Font@{Kill\+Font}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Kill\+Font(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid Kill\+Font (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_a29fd6b15a498074df9565150f5212475}
+
+
+Définition à la ligne 234 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_af33a2273205c1491be5916d3091658e0}{}\index{Lesson24.\+c@{Lesson24.\+c}!Kill\+G\+L\+Window@{Kill\+G\+L\+Window}}
+\index{Kill\+G\+L\+Window@{Kill\+G\+L\+Window}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Kill\+G\+L\+Window(\+G\+Lvoid)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid Kill\+G\+L\+Window (
+\begin{DoxyParamCaption}
+\item[{G\+Lvoid}]{}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_af33a2273205c1491be5916d3091658e0}
+
+
+Définition à la ligne 367 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_afffcfc9f44d139a5243c6d56fabd42c3}{}\index{Lesson24.\+c@{Lesson24.\+c}!Load\+T\+G\+A@{Load\+T\+G\+A}}
+\index{Load\+T\+G\+A@{Load\+T\+G\+A}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Load\+T\+G\+A(\+Texture\+Image $\ast$texture, char $\ast$filename)}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L Load\+T\+G\+A (
+\begin{DoxyParamCaption}
+\item[{{\bf Texture\+Image} $\ast$}]{texture, }
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_afffcfc9f44d139a5243c6d56fabd42c3}
+
+
+Définition à la ligne 127 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a87bb84d489df61ed7b0c002584fd984f}{}\index{Lesson24.\+c@{Lesson24.\+c}!Re\+Size\+G\+L\+Scene@{Re\+Size\+G\+L\+Scene}}
+\index{Re\+Size\+G\+L\+Scene@{Re\+Size\+G\+L\+Scene}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Re\+Size\+G\+L\+Scene(\+G\+Lsizei width, G\+Lsizei height)}]{\setlength{\rightskip}{0pt plus 5cm}G\+Lvoid Re\+Size\+G\+L\+Scene (
+\begin{DoxyParamCaption}
+\item[{G\+Lsizei}]{width, }
+\item[{G\+Lsizei}]{height}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_a87bb84d489df61ed7b0c002584fd984f}
+
+
+Définition à la ligne 267 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a661c2abc03926acfaeb93b4ae7db4943}{}\index{Lesson24.\+c@{Lesson24.\+c}!Win\+Main@{Win\+Main}}
+\index{Win\+Main@{Win\+Main}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Win\+Main(\+H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance, H\+I\+N\+S\+T\+A\+N\+C\+E h\+Prev\+Instance, L\+P\+S\+T\+R lp\+Cmd\+Line, int n\+Cmd\+Show)}]{\setlength{\rightskip}{0pt plus 5cm}int W\+I\+N\+A\+P\+I Win\+Main (
+\begin{DoxyParamCaption}
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Instance, }
+\item[{H\+I\+N\+S\+T\+A\+N\+C\+E}]{h\+Prev\+Instance, }
+\item[{L\+P\+S\+T\+R}]{lp\+Cmd\+Line, }
+\item[{int}]{n\+Cmd\+Show}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_a661c2abc03926acfaeb93b4ae7db4943}
+
+
+Définition à la ligne 623 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a9135ea2a0d6fce68ba3b858226a31a4f}{}\index{Lesson24.\+c@{Lesson24.\+c}!Wnd\+Proc@{Wnd\+Proc}}
+\index{Wnd\+Proc@{Wnd\+Proc}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{Wnd\+Proc(\+H\+W\+N\+D, U\+I\+N\+T, W\+P\+A\+R\+A\+M, L\+P\+A\+R\+A\+M)}]{\setlength{\rightskip}{0pt plus 5cm}L\+R\+E\+S\+U\+L\+T C\+A\+L\+L\+B\+A\+C\+K Wnd\+Proc (
+\begin{DoxyParamCaption}
+\item[{H\+W\+N\+D}]{h\+Wnd, }
+\item[{U\+I\+N\+T}]{u\+Msg, }
+\item[{W\+P\+A\+R\+A\+M}]{w\+Param, }
+\item[{L\+P\+A\+R\+A\+M}]{l\+Param}
+\end{DoxyParamCaption}
+)}\label{_lesson24_8c_a9135ea2a0d6fce68ba3b858226a31a4f}
+
+
+Définition à la ligne 563 du fichier Lesson24.\+c.
+
+
+
+\subsection{Documentation des variables}
+\hypertarget{_lesson24_8c_a22389371583c4b8843e06da43399d6d9}{}\index{Lesson24.\+c@{Lesson24.\+c}!active@{active}}
+\index{active@{active}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L active =T\+R\+U\+E}\label{_lesson24_8c_a22389371583c4b8843e06da43399d6d9}
+
+
+Définition à la ligne 82 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_ae4cbdc51d2d504c24c15b22cf9861e8d}{}\index{Lesson24.\+c@{Lesson24.\+c}!base@{base}}
+\index{base@{base}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{base}]{\setlength{\rightskip}{0pt plus 5cm}G\+Luint base}\label{_lesson24_8c_ae4cbdc51d2d504c24c15b22cf9861e8d}
+
+
+Définition à la ligne 90 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}{}\index{Lesson24.\+c@{Lesson24.\+c}!fullscreen@{fullscreen}}
+\index{fullscreen@{fullscreen}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{fullscreen}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L fullscreen =T\+R\+U\+E}\label{_lesson24_8c_ab15a33c0173f2c5b6ac806c55cf7f0ba}
+
+
+Définition à la ligne 83 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a78f6446a0e13adc7b7b2f239112ac785}{}\index{Lesson24.\+c@{Lesson24.\+c}!h\+D\+C@{h\+D\+C}}
+\index{h\+D\+C@{h\+D\+C}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{h\+D\+C}]{\setlength{\rightskip}{0pt plus 5cm}H\+D\+C h\+D\+C =N\+U\+L\+L}\label{_lesson24_8c_a78f6446a0e13adc7b7b2f239112ac785}
+
+
+Définition à la ligne 76 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a74029128723095e7bf00a71d46af8b24}{}\index{Lesson24.\+c@{Lesson24.\+c}!h\+Instance@{h\+Instance}}
+\index{h\+Instance@{h\+Instance}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{h\+Instance}]{\setlength{\rightskip}{0pt plus 5cm}H\+I\+N\+S\+T\+A\+N\+C\+E h\+Instance}\label{_lesson24_8c_a74029128723095e7bf00a71d46af8b24}
+
+
+Définition à la ligne 79 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a874963259c7cd998acfe6e187fbdb4c1}{}\index{Lesson24.\+c@{Lesson24.\+c}!h\+R\+C@{h\+R\+C}}
+\index{h\+R\+C@{h\+R\+C}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{h\+R\+C}]{\setlength{\rightskip}{0pt plus 5cm}H\+G\+L\+R\+C h\+R\+C =N\+U\+L\+L}\label{_lesson24_8c_a874963259c7cd998acfe6e187fbdb4c1}
+
+
+Définition à la ligne 77 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_afec4341c234519e145bac6f0e5edaa51}{}\index{Lesson24.\+c@{Lesson24.\+c}!h\+Wnd@{h\+Wnd}}
+\index{h\+Wnd@{h\+Wnd}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{h\+Wnd}]{\setlength{\rightskip}{0pt plus 5cm}H\+W\+N\+D h\+Wnd =N\+U\+L\+L}\label{_lesson24_8c_afec4341c234519e145bac6f0e5edaa51}
+
+
+Définition à la ligne 78 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a55a8351b704275ad12988864918abb2a}{}\index{Lesson24.\+c@{Lesson24.\+c}!keys@{keys}}
+\index{keys@{keys}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{keys}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L keys\mbox{[}256\mbox{]}}\label{_lesson24_8c_a55a8351b704275ad12988864918abb2a}
+
+
+Définition à la ligne 81 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_acf2a74a45a0b7b218a1722c7f1f866db}{}\index{Lesson24.\+c@{Lesson24.\+c}!maxtokens@{maxtokens}}
+\index{maxtokens@{maxtokens}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{maxtokens}]{\setlength{\rightskip}{0pt plus 5cm}int maxtokens}\label{_lesson24_8c_acf2a74a45a0b7b218a1722c7f1f866db}
+
+
+Définition à la ligne 86 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a06b53676896b840c29ff225c6d03582b}{}\index{Lesson24.\+c@{Lesson24.\+c}!scroll@{scroll}}
+\index{scroll@{scroll}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{scroll}]{\setlength{\rightskip}{0pt plus 5cm}int scroll}\label{_lesson24_8c_a06b53676896b840c29ff225c6d03582b}
+
+
+Définition à la ligne 85 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a6c2b0225b160c5caba38344c4ddc632e}{}\index{Lesson24.\+c@{Lesson24.\+c}!sheight@{sheight}}
+\index{sheight@{sheight}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{sheight}]{\setlength{\rightskip}{0pt plus 5cm}int sheight}\label{_lesson24_8c_a6c2b0225b160c5caba38344c4ddc632e}
+
+
+Définition à la ligne 88 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_a2b91abb418355592b0b747cb4e06e2e7}{}\index{Lesson24.\+c@{Lesson24.\+c}!swidth@{swidth}}
+\index{swidth@{swidth}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{swidth}]{\setlength{\rightskip}{0pt plus 5cm}int swidth}\label{_lesson24_8c_a2b91abb418355592b0b747cb4e06e2e7}
+
+
+Définition à la ligne 87 du fichier Lesson24.\+c.
+
+\hypertarget{_lesson24_8c_ab0e55850a975a1f6526bf2713d7b3759}{}\index{Lesson24.\+c@{Lesson24.\+c}!textures@{textures}}
+\index{textures@{textures}!Lesson24.\+c@{Lesson24.\+c}}
+\subsubsection[{textures}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Texture\+Image} textures\mbox{[}1\mbox{]}}\label{_lesson24_8c_ab0e55850a975a1f6526bf2713d7b3759}
+
+
+Définition à la ligne 101 du fichier Lesson24.\+c.
+
